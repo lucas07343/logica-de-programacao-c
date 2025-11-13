@@ -2,25 +2,21 @@
 
 int main()
 {
-    int X, Y, i, soma;
+    int X, Y, i, soma, troca;
 
     printf("Digite dois numeros:\n");
-    scanf("%d", &X);
-    scanf("%d", &Y);
+    scanf("%d %d", &X, &Y);
+
+    if (X > Y) {
+        troca = Y;
+        Y = X;
+        X = troca;
+    }
 
     soma = 0;
-    if (X < Y) {
-        for (i = X; i < Y; i++) {
-            if (i % 2 != 0) {
-                soma = soma + i;
-            }
-        }
-    }
-    else {
-        for (i = Y; i < X; i++) {
-            if (i % 2 != 0) {
-                soma = soma + i;
-            }
+    for (i = X+1; i < Y; i++) {
+        if (i % 2 != 0) {
+            soma = soma + i;
         }
     }
 
