@@ -35,16 +35,20 @@ int main()
         scanf("%lf", &alturas[i]);
     }
 
-    contIdades = 0;
+    somaAlturas = 0;
     for (i = 0; i < N; i++) {
         somaAlturas = somaAlturas + alturas[i];
-        
-        if (idades[i] < 16) {
-            contIdades = contIdades + 1;
-        }
     }
 
     mediaAlturas = somaAlturas / N;
+
+    contIdades = 0;
+    for (i = 0; i < N; i++) {
+        if (idades[i] < 16) {
+            contIdades++;
+        }
+    }
+
     porcentagemIdades = 100 / N * contIdades;
 
     printf("\nAltura média: %.2lf\n", mediaAlturas);
