@@ -3,7 +3,6 @@
 int main()
 {
     int M, N, i, j;
-    double somaLinha;
 
     do {
         printf("Qual a quantidade de linhas da matriz?(maximo 10) ");
@@ -31,13 +30,11 @@ int main()
     }
 
     for (i = 0; i < M; i++) {
-        somaLinha = 0;
+        vet[i] = 0;
 
         for (j = 0; j < N; j++) {
-            somaLinha = somaLinha + mat[i][j];
+            vet[i] = vet[i] + mat[i][j];
         }
-
-        vet[i] = somaLinha;
     }
 
     printf("\nVETOR GERADO:\n");
