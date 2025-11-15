@@ -1,7 +1,3 @@
-# logica-de-programacao-c
-
-Exercícios e testes realizados no VisualG enquanto aprendia os fundamentos da lógica de programação — incluindo estruturas sequenciais, condicionais, repetitivas, vetores e matrizes.
-
 # 💻 Lógica de Programação em C
 
 Exercícios e testes desenvolvidos em **linguagem C** no **Visual Studio Code**, com o objetivo de reforçar os fundamentos da **lógica de programação** — praticando desde as estruturas básicas até o uso de vetores, matrizes e funções.
